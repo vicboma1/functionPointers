@@ -10,7 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: configure
-      run: mkdir build && cd build && cmake -DCMAKE_CXX_FLAGS="-Werror" ..
+      run: mkdir build
+    - name: cmake
+      run: cmake -DCMAKE_CXX_FLAGS="-Werror" ..
     - name: build
       run: cmake --build build
 
@@ -24,6 +26,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: configure
-      run: mkdir build && cd build && cmake ..
+      run: mkdir build
     - name: build
       run: cmake --build build --config Debug
