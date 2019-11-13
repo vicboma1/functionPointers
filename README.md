@@ -1,5 +1,5 @@
-# function Pointers
-
+# Function Pointers
+```
     int it = 10000000;
 
 ********************* (*(double*)process(&a,&b,(*fun_ptr_arr[1]))) *********************
@@ -40,3 +40,5 @@
 
 ********************* _double_fun_process_(&a,&b,&res,__td_fun_ptr_add____); *********************
 2399727000 ns
+
+```
